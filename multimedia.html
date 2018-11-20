@@ -7,13 +7,17 @@
   <body>
 
     <h2>Videos para HTML5</h2>
-    <video src="video/codigo.ogv" controls>
+    <video controls preload="auto" muted loop poster="img/poster.jpg">
+      <source src="video/codigo.mp4" type="video/mp4">
+      <source src="video/codigo.webm" type="video/webm">
+      <source src="video/codigo.ogv" type="video/ogg">
       <p>Tu navegador no soporta video</p>
     </video>
 
     <h2>Audio en HTML5</h2>
-    <audio src="audio/audio.oga" controls>
-
+    <audio controls preload="none" loop>
+      <source src="audio/audio.mp4" type="audio/mp4">
+      <source src="audio/audio.oga" type="audio/ogg">
     </audio>
   </body>
 </html>
