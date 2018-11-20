@@ -1,9 +1,140 @@
 /*
-  Comentario!
+  Selector IDs
 */
-h2{
-  color:blue;
+#titulo {
+  color: blue;
 }
-p{
-  font-size: 20px;
+
+#logo {
+  margin-top: 20px;
+}
+/*
+  Selector clase
+*/
+.rojo {
+  color: red;
+}
+/*
+  Selector clase y ID
+*/
+#titulo.titulo {
+  font-size: 30px;
+}
+/*
+  Selector con 2 clases
+*/
+.azul.tituloCurso {
+  color: blue;
+}
+/*
+  Selector elemento HTML
+*/
+p {
+  color: brown;
+}
+h3 {
+  color: green;
+}
+/*
+  Selector elemento HTML y ID
+*/
+img#logo {
+  width: 300px;
+}
+/*
+  Selector elemento HTML y clases
+*/
+section.seccion {
+  background: gray;
+}
+div.noticia {
+  background: white;
+}
+/*
+  Selector universal
+*/
+/*
+* {
+  color: black!important;
+  font-size: 20px!important;
+}
+*/
+#listado-cursos * {
+  font-size: 30px;
+}
+/*
+  Múltiples elementos
+*/
+h2, h3, p, a {
+
+}
+/*
+  Selector descendiente
+*/
+nav#navegacion ul li {
+  display: inline;
+}
+/*
+  Selector con hijos
+*/
+section#cursos > ul {
+  border: 1px solid black;
+}
+/*
+  Selector elementos adyacentes
+*/
+ul#listado-cursos + p {
+  background-color: red!important;
+  color: white;
+}
+/*
+  Selector enlaces
+*/
+a[href*="facebook.com"] {
+  background-color: yellow;
+}
+a[href*="google.com"] {
+  background-color: purple;
+  color: white;
+}
+/*
+  Selector atributo
+*/
+img[id="logo"] {
+  margin-top: 0px;
+}
+/*
+  Selector con Pseudo Clases
+*/
+div.menu nav ul li:first-child a {
+  text-decoration: none;
+}
+div.menu nav ul li:last-child a {
+  text-decoration: none;
+}
+div.menu nav ul li a:focus,
+div.menu nav ul li a:visited,
+div.menu nav ul li a:active {
+  color: black;
+}
+div.menu nav ul li a:hover {
+  color: orange;
+}
+h2:hover {
+  color: orange!important;
+}
+/*
+  Selector con Pseudo Clases y NTH-CHILD
+*/
+div.menu nav ul li:nth-child(1) {
+  background-color: red;
+}
+div.menu nav ul li:nth-child(4) {
+  background-color: red;
+}
+table tbody tr:nth-child(odd){
+  background-color: orange;
+}
+table tbody tr:nth-child(even){
+  background-color: purple;
 }
