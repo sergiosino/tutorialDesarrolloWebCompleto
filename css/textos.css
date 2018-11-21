@@ -1,0 +1,50 @@
+/* Font Family */
+body {
+  font-family: Arial, Helvetica, serif;
+}
+h2 {
+  font: italic small-caps normal 30px/30px Verdana;
+  text-align: center;
+  letter-spacing: 10px;
+}
+h3{
+  font-family: 'Times New Roman', serif;
+  font-size: 22px;
+  font-variant: small-caps;
+  font-weight: lighter;
+}
+p {
+  font-family: Geneva, Helvetica, sans-serif;
+  font-size: 18px;
+  text-transform: capitalize;
+  line-height: 30px;
+  text-align: justify;
+}
+a {
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+}
+div.noticia p {
+  text-indent: 50px;
+}
+section#introduccion p span {
+  font-style: italic;
+  text-decoration: underline;
+}
+#listado-cursos {
+  text-transform: lowercase;
+}
+section#introduccion p {
+  font-variant: small-caps;
+}
+p.oferta span {
+  text-decoration: line-through;
+}
+div.oferta {
+  height: 80px;
+  background-color: red;
+}
+div.oferta h2 {
+  line-height: 80px;
+}
